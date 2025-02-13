@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Coffe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Desserts</h1>
+        <div class="content">
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="images/image-waffle-desktop.jpg" alt="Waffle">
+                    <p class="category">Waffle</p>
+                    <h3>Waffle with Berries</h3>
+                    <p class="price" data-price="6.50">$6.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/image-creme-brulee-desktop.jpg" alt="Waffle">
+                    <p class="category">Creme Brulee</p>
+                    <h3>Vanilla Bean Creme Brulee</h3>
+                    <p class="price" data-price="7.00">$7.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/image-macaron-desktop.jpg" alt="Waffle">
+                    <p class="category">Macaron</p>
+                    <h3>Macaron Mix of Five</h3>
+                    <p class="price" data-price="8.00">$8.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/image-baklava-desktop.jpg" alt="Waffle">
+                    <p class="category">Baklava</p>
+                    <h3>Traditional Baklava</h3>
+                    <p class="price" data-price="9.00">$9.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/image-brownie-desktop.jpg" alt="Waffle">
+                    <p class="category">Brownie</p>
+                    <h3>Chocolate Brownie</h3>
+                    <p class="price" data-price="5.50">$5.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/image-meringue-desktop.jpg" alt="Waffle">
+                    <p class="category">Pie</p>
+                    <h3>Lemon Meringue Pie</h3>
+                    <p class="price" data-price="5.50">$5.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/image-cake-desktop.jpg" alt="Waffle">
+                    <p class="category">Cake</p>
+                    <h3>Red Velvet Ckae</h3>
+                    <p class="price" data-price="4.50">$4.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/image-tiramisu-desktop.jpg" alt="Waffle">
+                    <p class="category">Tiramisu</p>
+                    <h3>Classic Tiramisu</h3>
+                    <p class="price" data-price="5.50">$5.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/image-panna-cotta-desktop.jpg" alt="Waffle">   
+                    <p class="category">Panna Cottaa</p>
+                    <h3>Vanilla Panna Cotta</h3>
+                    <p class="price" data-price="6.50">$6.50</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <div class="cart-section">
+                <h3>Your Cart (<span id="cart-count">0</span>)</h3>
+                <img src="images/illustration-empty-cart.svg" alt="Empty Cart">
+                <p>Your added items will appear here</p>
+                <ul id="cart-items"></ul>
+                <p>Total: $ <span id="total-price">0.00</span></p>
+                <button class="checkout-btn">Complete Payment</button>
+                <button class="clear-cart-btn">Clear Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="checkout-popup">
+        <h2>Order Summary</h2>
+        <ul id="popup-cart-items"></ul>
+        <p>Total: $ <span id="popup-total-price">0.00</span></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
